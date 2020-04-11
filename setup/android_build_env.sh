@@ -13,7 +13,7 @@ UBUNTU_18_PACKAGES="curl"
 DEBIAN_10_PACKAGES="curl rsync"
 PACKAGES=""
 
-sudo apt install lsb-core
+sudo apt install -y lsb-core
 
 LSB_RELEASE="$(lsb_release -d | cut -d ':' -f 2 | sed -e 's/^[[:space:]]*//')"
 
